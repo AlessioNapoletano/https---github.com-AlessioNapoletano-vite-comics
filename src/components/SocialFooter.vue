@@ -10,7 +10,7 @@ export default {
             <div class="d-flex justify-content-between py-5">
 
                 <div class="button">
-                    <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+                    <a href="#" class="my-button">SIGN UP NOW!</a>
                 </div>
 
                 <div class="social d-flex">
@@ -22,18 +22,23 @@ export default {
                         <div class="image-fluid">
                             <img src="../assets/img/footer-facebook.png" alt="Logo Facebook">
                         </div>
-                        <div class="image-fluid">
-                            <img src="../assets/img/footer-periscope.png" alt="Logo Periscope">
-                        </div>
-                        <div class="image-fluid">
-                            <img src="../assets/img/footer-pinterest.png" alt="Logo Pinterest">
-                        </div>
+
                         <div class="image-fluid">
                             <img src="../assets/img/footer-twitter.png" alt="Logo Twitter">
                         </div>
+
                         <div class="image-fluid">
                             <img src="../assets/img/footer-youtube.png" alt="Logo Youtube">
                         </div>
+
+                        <div class="image-fluid">
+                            <img src="../assets/img/footer-pinterest.png" alt="Logo Pinterest">
+                        </div>
+
+                        <div class="image-fluid">
+                            <img src="../assets/img/footer-periscope.png" alt="Logo Periscope">
+                        </div>
+
                     </div>
                 </div>
 
@@ -51,6 +56,19 @@ export default {
 #follow-us {
     background-color: #333333;
 }
+
+.my-button {
+    color: white;
+    font-weight: 600;
+    border: 2px solid $main-color;
+    text-decoration: none;
+    padding: .8rem;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
 
 h3 {
     color: $main-color;
