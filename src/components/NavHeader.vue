@@ -76,7 +76,6 @@ ul {
     display: flex;
 
     li {
-        list-style-type: none;
         padding: 1rem;
         font-weight: 600;
     }
