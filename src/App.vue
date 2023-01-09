@@ -2,6 +2,8 @@
 import NavHeader from './components/NavHeader.vue';
 import ContentMain from './components/ContentMain.vue';
 import MerchandiseMain from './components/MerchandiseMain.vue';
+import ListLinkFooter from './components/ListLinkFooter.vue';
+import SocialFooter from './components/SocialFooter.vue'
 
 
 export default {
@@ -9,6 +11,8 @@ export default {
     NavHeader,
     ContentMain,
     MerchandiseMain,
+    ListLinkFooter,
+    SocialFooter,
   }
 }
 </script>
@@ -20,6 +24,11 @@ export default {
     <ContentMain />
     <MerchandiseMain />
   </main>
+
+  <footer>
+    <ListLinkFooter />
+    <SocialFooter />
+  </footer>
 
 </template>
 
