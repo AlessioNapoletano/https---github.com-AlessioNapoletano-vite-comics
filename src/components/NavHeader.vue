@@ -5,34 +5,44 @@ export default {
             navList:
                 [
                     {
-                        text: "CHARACTERS"
+                        text: "CHARACTERS",
+                        active: false
                     },
                     {
-                        text: "COMICS"
+                        text: "COMICS",
+                        active: true
                     },
                     {
-                        text: "MOVIES"
+                        text: "MOVIES",
+                        active: false
                     },
                     {
-                        text: "TV"
+                        text: "TV",
+                        active: false
                     },
                     {
-                        text: "GAMES"
+                        text: "GAMES",
+                        active: false
                     },
                     {
-                        text: "COLLECTIBLES"
+                        text: "COLLECTIBLES",
+                        active: false
                     },
                     {
-                        text: "VIDEOS"
+                        text: "VIDEOS",
+                        active: false
                     },
                     {
-                        text: "FANS"
+                        text: "FANS",
+                        active: false
                     },
                     {
-                        text: "NEWS"
+                        text: "NEWS",
+                        active: false
                     },
                     {
-                        text: "SHOP"
+                        text: "SHOP",
+                        active: false
                     },
                 ]
         }
@@ -49,7 +59,7 @@ export default {
 
             <nav>
                 <ul>
-                    <li v-for="item in navList">
+                    <li v-for="item in navList" :class="(item.active) ? 'active' : ''">
                         {{ item.text }}
                     </li>
                 </ul>
@@ -59,10 +69,8 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
-header {
-    border: 1px solid black;
-}
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 ul {
     display: flex;
@@ -70,7 +78,12 @@ ul {
     li {
         list-style-type: none;
         padding: 1rem;
-        font-weight: bold;
+        font-weight: 600;
     }
+}
+
+.active {
+    color: $main-color;
+    border-bottom: 4px solid $main-color;
 }
 </style>
