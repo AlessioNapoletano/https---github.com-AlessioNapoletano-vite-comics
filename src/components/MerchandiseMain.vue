@@ -1,28 +1,44 @@
-
 <script>
 export default {
-
+    data() {
+        return {
+            iconList:
+                [
+                    {
+                        image: 'buy-comics-digital-comics.png',
+                        text: 'DIGITAL COMICS'
+                    },
+                    {
+                        image: 'buy-comics-merchandise.png',
+                        text: 'DC MERCHANDISE'
+                    },
+                    {
+                        image: 'buy-comics-subscriptions.png',
+                        text: 'SUBSCRIPTION'
+                    },
+                    {
+                        image: 'buy-comics-shop-locator.png',
+                        text: 'COMIC SHOP LOCATOR'
+                    },
+                    {
+                        image: 'buy-dc-power-visa.svg',
+                        text: 'DC POWER VISA'
+                    }
+                ]
+        }
+    }
 }
 </script>
 
-<template lang="">
+<template>
     <div id="merchandise" class="d-flex align-items-center text-light fw-bold">
         <div class="container-lg">
             <ul class="d-flex align-items-center justify-content-between">
-                <li>
-                    DIGITAL
-                </li>
-                <li>
-                    DC MERCHANDISE 
-                </li>
-                <li>
-                    SUBSCRIPTION
-                </li>
-                <li>
-                    COMIC SHOP LOCATOR
-                </li>
-                <li>
-                    DC POWER VISA
+                <li v-for="item in iconList">
+                    <img :src="'../' + item.image" alt="Icon" />
+                    <span>
+                        {{ item.text }}
+                    </span>
                 </li>
             </ul>
 
