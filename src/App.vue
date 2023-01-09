@@ -1,15 +1,23 @@
 <script>
 import NavHeader from './components/NavHeader.vue';
+import ContentMain from './components/ContentMain.vue';
+
 
 export default {
   components: {
     NavHeader,
+    ContentMain,
   }
 }
 </script>
 
 <template>
   <NavHeader />
+
+  <main>
+    <ContentMain />
+  </main>
+
 </template>
 
 <style lang="scss">
