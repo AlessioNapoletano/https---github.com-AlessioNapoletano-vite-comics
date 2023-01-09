@@ -5,6 +5,12 @@
 <template>
 </template>
 
-<style scoped>
+<style lang="scss">
+@use './styles/general.scss' as *;
+@use './styles/partials/variables' as *;
+@use 'bootstrap/scss/bootstrap.scss' as *;
 
+h1 {
+  color: $main-color;
+}
 </style>
