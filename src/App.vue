@@ -1,12 +1,14 @@
 <script>
 import NavHeader from './components/NavHeader.vue';
 import ContentMain from './components/ContentMain.vue';
+import MerchandiseMain from './components/MerchandiseMain.vue';
 
 
 export default {
   components: {
     NavHeader,
     ContentMain,
+    MerchandiseMain,
   }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
 
   <main>
     <ContentMain />
+    <MerchandiseMain />
   </main>
 
 </template>
