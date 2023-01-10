@@ -35,7 +35,7 @@ export default {
         <div class="container-lg">
             <ul class="d-flex align-items-center justify-content-between">
                 <li v-for="item in iconList">
-                    <img :src="'../' + item.image" alt="Icon" />
+                    <img :src="`src/assets/img/${item.image}`" :alt="'logo' + item.text">
                     <span>
                         {{ item.text }}
                     </span>
@@ -52,6 +52,15 @@ export default {
 #merchandise {
     background-color: $main-color;
     height: 180px;
+}
+
+span {
+    font-size: .8rem;
+}
+
+img {
+    height: 50px;
+    margin-right: .2rem;
 }
 
 li {

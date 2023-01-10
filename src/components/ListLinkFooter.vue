@@ -88,10 +88,9 @@ export default {
                     {
                         text: 'DC Power Visa',
                     }
-                ]
+                ],
         }
     }
-
 }
 </script>
 
@@ -158,8 +157,8 @@ export default {
                                 </h4>
 
                                 <ul>
-                                    <li v-for="item in sitesList">
-                                        <a href="#">
+                                    <li v-for="item in sitesList" :class="(item.hover) ? 'hover' : ''">
+                                        <a href=" #">
                                             {{ item.text }}
                                         </a>
                                     </li>
@@ -191,6 +190,9 @@ export default {
     overflow: hidden;
 }
 
+.hover {
+    filter: brightness(150%);
+}
 
 nav {
     color: white;

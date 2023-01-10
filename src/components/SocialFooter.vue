@@ -1,6 +1,10 @@
 <script>
 export default {
+    data() {
+        return {
 
+        }
+    }
 }
 </script>
 
@@ -69,7 +73,6 @@ export default {
     }
 }
 
-
 h3 {
     color: $main-color;
     font-weight: 600;
@@ -77,5 +80,10 @@ h3 {
 
 img {
     margin-right: 1rem;
+
+    &:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+    }
 }
 </style>
