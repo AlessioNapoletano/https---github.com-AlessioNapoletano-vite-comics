@@ -89,11 +89,12 @@ export default {
 </script>
 
 <template>
-    <div id="content" class="d-flex align-items-center">
+    <div id="content">
+        <h2 class="text-light py-5">
+            Current Series
+        </h2>
+
         <div class="container-lg">
-            <h2 class="text-light py-5">
-                Current Series
-            </h2>
 
             <MagazineComponent v-for="magazine in magazineList" :thumb="magazine.thumb" :price="magazine.price"
                 :series="magazine.series" :type="magazine.series" />
@@ -108,6 +109,11 @@ export default {
 
 #content {
     background-color: $secondary-color;
+
+    .container-lg {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     h2 {
         font-weight: 600;

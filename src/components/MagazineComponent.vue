@@ -18,5 +18,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.magazine {
+    display: flex;
+}
 
+h2 {
+    color: white;
+    display: none;
+}
 </style>
