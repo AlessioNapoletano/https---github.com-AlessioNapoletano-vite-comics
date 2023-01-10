@@ -94,7 +94,7 @@ export default {
             Current Series
         </h2>
 
-        <div class="container-lg">
+        <div class="container-lg py-4">
 
             <MagazineComponent v-for="magazine in magazineList" :thumb="magazine.thumb" :price="magazine.price"
                 :series="magazine.series" :type="magazine.series" />

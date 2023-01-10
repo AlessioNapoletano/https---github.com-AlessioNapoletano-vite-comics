@@ -13,17 +13,14 @@ export default {
 <template>
     <div class="magazine">
         <img :src="thumb">
-        <h2> {{ price }} - {{ series }} -- {{ type }}</h2>
+        <p class="text-light fw-bold"> {{ series.toUpperCase() }}</p>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .magazine {
-    display: flex;
-}
-
-h2 {
-    color: white;
-    display: none;
+    width: calc(100% / 6);
+    padding: .5rem;
+    margin-bottom: 1rem;
 }
 </style>
