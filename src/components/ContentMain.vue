@@ -90,9 +90,11 @@ export default {
 
 <template>
     <div id="content">
-        <h2 class="text-light py-5">
-            Current Series
-        </h2>
+        <div class="title">
+            <h3 class="text-light">
+                Current Series
+            </h3>
+        </div>
 
         <div class="container-lg py-4">
 
@@ -109,14 +111,22 @@ export default {
 
 #content {
     background-color: $secondary-color;
+    position: relative;
+    padding-top: 4rem;
 
     .container-lg {
         display: flex;
         flex-wrap: wrap;
     }
 
-    h2 {
+    h3 {
         font-weight: 600;
+        color: white;
+        background-color: $main-color;
+        position: absolute;
+        padding: .5rem;
+        left: 350px;
+        bottom: 861px;
     }
 }
 </style>

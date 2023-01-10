@@ -1,5 +1,6 @@
 <script>
 import NavHeader from './components/NavHeader.vue';
+import JumbotronComponent from './components/JumbotronComponent.vue';
 import ContentMain from './components/ContentMain.vue';
 import MerchandiseMain from './components/MerchandiseMain.vue';
 import ListLinkFooter from './components/ListLinkFooter.vue';
@@ -10,6 +11,7 @@ import EndFooter from './components/EndFooter.vue';
 export default {
   components: {
     NavHeader,
+    JumbotronComponent,
     ContentMain,
     MerchandiseMain,
     ListLinkFooter,
@@ -23,6 +25,7 @@ export default {
   <NavHeader />
 
   <main>
+    <JumbotronComponent />
     <ContentMain />
     <MerchandiseMain />
   </main>
