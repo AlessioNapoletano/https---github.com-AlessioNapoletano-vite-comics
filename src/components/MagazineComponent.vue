@@ -11,10 +11,10 @@ export default {
 </script>
 
 <template>
-    <div class="magazine">
+    <section class="magazine">
         <img :src="thumb">
         <p class="text-light fw-bold"> {{ series.toUpperCase() }}</p>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

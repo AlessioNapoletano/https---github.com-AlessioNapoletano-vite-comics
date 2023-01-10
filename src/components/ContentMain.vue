@@ -92,7 +92,7 @@ export default {
     <div id="content">
         <div class="title">
             <h3 class="text-light">
-                Current Series
+                CURRENT SERIES
             </h3>
         </div>
 
